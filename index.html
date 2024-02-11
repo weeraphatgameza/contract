@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <title>กรอกข้อมูลสำหรับทำสัญญา</title>
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        var yyyy = today.getFullYear();
+        if(mm == 1){
+            mm = "มกราคม";
+        }
+        today = mm + '/' + dd + '/' + yyyy;
+        document.write("วันนี้วันที่ ");
+        document.write(today);
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกชื่อของคุณ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกเลขบัตรประชาชนของคุณ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกที่อยู่ของคุณ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกชื่อของผู้กู้</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกเลขบัตรประชาชนของผู้กู้</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกที่อยู่ของผู้กู้</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกจำนวนเงินที่จะทำสัญญา</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกวันที่ที่จะคืน</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกดอกเบี้ยที่ต้องการ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>กรุณากรอกจำนวนงวด</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <input type="submit">
+</body>
+
+</html>
